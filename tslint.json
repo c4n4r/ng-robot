@@ -9,7 +9,7 @@
     },
     "array-type": false,
     "arrow-return-shorthand": true,
-    "curly": true,
+    "curly": false,
     "deprecation": {
       "severity": "warning"
     },
@@ -136,6 +136,7 @@
     "no-output-native": true,
     "no-output-on-prefix": true,
     "no-output-rename": true,
+    "no-trailing-whitespace": false,
     "no-outputs-metadata-property": true,
     "template-banana-in-box": true,
     "template-no-negated-async": true,

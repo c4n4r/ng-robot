@@ -123,6 +123,46 @@
           }
         }
       }
+    },
+    "robot": {
+      "projectType": "library",
+      "root": "projects/robot",
+      "sourceRoot": "projects/robot/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/robot/tsconfig.lib.json",
+            "project": "projects/robot/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/robot/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/robot/src/test.ts",
+            "tsConfig": "projects/robot/tsconfig.spec.json",
+            "karmaConfig": "projects/robot/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/robot/tsconfig.lib.json",
+              "projects/robot/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "ng-robot"
 }

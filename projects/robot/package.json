@@ -1,0 +1,24 @@
+{
+  "name": "angular-robot-fsm",
+  "keywords": [
+    "finite state machine",
+    "angular",
+    "FSM"
+  ],
+  "author": "Hadrien Delphin",
+  "license": "MIT",
+  "description": "A simple State driven component fro Angular 2+",
+  "version": "0.0.3",
+  "peerDependencies": {
+    "@angular/common": "^9.1.13",
+    "@angular/core": "^9.1.13"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/c4n4r/ng-robot.git"
+  },
+  "homepage": "https://github.com/c4n4r/ng-robot.git",
+  "dependencies": {
+    "tslib": "^1.10.0"
+  }
+}
